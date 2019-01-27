@@ -147,6 +147,7 @@
             <button id="b2" onclick="bclick(2)" type="button" class="btn btn-warning"></button>
             <button id="b3" onclick="bclick(3)" type="button" class="btn btn-warning"></button>
             <button id="b4" onclick="bclick(4)" type="button" class="btn btn-warning"></button>
+            <button id="b5" onclick="bclick(5)" type="button" class="btn btn-warning"></button>
             <a id="confirmed" href="texturepacks/§l§dLINQ §l§fPack §l§d[v4].zip">LINQ Pack V4</a>
         </div>
     </div>
@@ -163,6 +164,7 @@
     var b2 = document.getElementById('b2');
     var b3 = document.getElementById('b3');
     var b4 = document.getElementById('b4');
+    var b5 = document.getElementById('b5');
     var tp = document.getElementById('confirmed');
     var state = "intro";
 
@@ -182,6 +184,8 @@
         b3.style.display = "block";
         b4.innerHTML = "LINQ Pack V7";
         b4.style.display = "block";
+        b5.innerHTML = "LINQ Pack V10";
+        b5.style.display = "block";
         pic.src = "images/LINQ25.jpg";
     }
 
@@ -202,6 +206,7 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 state = "confirmdownloadv4";
             }
             if (button == 2) {
@@ -219,6 +224,7 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 state = "confirmdownloadv5";
             }
             if (button == 3) {
@@ -236,6 +242,7 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 state = "confirmdownloadv6";
             }
             if (button == 4) {
@@ -253,7 +260,26 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 state = "confirmdownloadv7";
+            }
+            if (button == 5) {
+                tp.style.display = "none";
+                ptext1.innerHTML = "This is version 10 of LINQ's texture pack.";
+                ptext1.style.display = "block";
+                ptext2.innerHTML = "If you wish to download this texture pack then please press the proceed to download button.";
+                ptext2.style.display = "block";
+                ptext3.innerHTML = "none";
+                ptext3.style.display = "none";
+                ptext4.innerHTML = "none";
+                ptext4.style.display = "none";
+                b1.innerHTML = "Proceed to download";
+                b1.style.display = "block";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+                b5.style.display = "none";
+                state = "confirmdownloadv10";
             }
         }
         else if (state == "confirmdownloadv4") {
@@ -267,6 +293,7 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 tp.href = "texturepacks/§l§dLINQ §l§fPack §l§d[v4].zip";
                 tp.innerHTML = "LINQ Pack v4";
                 tp.style.display = "block";
@@ -283,6 +310,7 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 tp.href = "texturepacks/§l§dLINQ §l§fPack §l§d[v5].zip";
                 tp.innerHTML = "LINQ Pack v5";
                 tp.style.display = "block";
@@ -299,6 +327,7 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 tp.href = "texturepacks/§l§dLINQ §l§fPack §l§d[v6].zip";
                 tp.innerHTML = "LINQ Pack v6";
                 tp.style.display = "block";
@@ -315,8 +344,26 @@
                 b2.style.display = "none";
                 b3.style.display = "none";
                 b4.style.display = "none";
+                b5.style.display = "none";
                 tp.href = "texturepacks/§l§dLINQ §l§fPack §l§d[v7].zip";
                 tp.innerHTML = "LINQ Pack v7";
+                tp.style.display = "block";
+            }
+        }
+        else if (state == "confirmdownloadv10") {
+            if (button == 1) {
+                ptext1.innerHTML = "Please click the button below to download the texture pack.";
+                ptext1.style.display = "block";
+                ptext2.style.display = "none";
+                ptext3.style.display = "none";
+                ptext4.style.display = "none";
+                b1.style.display = "none";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+                b5.style.display = "none";
+                tp.href = "texturepacks/§l§dLINQ §l§fPack §l§d[v10].zip";
+                tp.innerHTML = "LINQ Pack v10";
                 tp.style.display = "block";
             }
         }
