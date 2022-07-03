@@ -2,3 +2,43 @@
     background-image: url(/images/dumpster.png);
     position: absolute;
   }
+
+  body {
+    background-color: #1D2B3D;
+    color: white;
+    font-family: "Courier", Times, serif;
+    margin: 0;
+}
+
+#wrapper {
+    width: 100%;
+    min-width: 580px;
+    max-width: 100%;
+    margin: 0px;
+}
+
+header {
+    background-color: #070A0F;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav {
+    width: 25%;
+    float: right;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+
+nav a:hover {
+    color: #7EC4FF;
+    text-shadow: 0.5px 0.5px white;
+}
+
+h1 {
+    margin: 0;
+}   
